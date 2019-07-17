@@ -1,0 +1,10 @@
+<div class="panel panel-default" *ngIf="articles">
+  <div class="panel-heading">Liste de tous les articles</div>
+  <div class="panel-body">
+   <table class="table">
+      <tr ><th>Nom</th><th>Auteur</th><th>Contenu</th></tr>
+      <tr *ngFor="let p of this.articles._embedded.posts"><td>{{p.name}}</td><td>{{p.author}}</td><td>{{p.content}}</td></tr>
+   </table>
+  </div>
+</div>
+

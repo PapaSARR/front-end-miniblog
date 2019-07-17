@@ -1,0 +1,20 @@
+<div class="panel panel-default" *ngIf="this.article">
+  <div class="panel-heading">Article {{this.article.name}}</div>
+  <div class="panel-body">
+    <table>
+      <th>
+        <tr>Titre: </tr>
+        <tr>Auteur: </tr>
+        <tr>Catégorie: </tr>
+        <tr>Contenu: </tr>
+      </th>
+      <td>
+        <tr>{{this.article.title}}</tr>
+        <tr>{{this.article.author}}</tr>
+        <tr>{{this.article.category}}</tr>
+        <tr>{{this.article.content}}</tr>
+      </td>
+
+    </table>
+  </div>
+</div>

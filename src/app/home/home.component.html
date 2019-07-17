@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+    <div class="panel-heading">Derniers articles du blog</div>
+    <div class="panel-body">
+      <table class="table" *ngIf="this.lastPosts">
+        <tr *ngFor="let p of this.lastPosts">
+          <th><a href="http://localhost:4200/accueil/{{p.name}}">{{p.name}}</a></th>
+        </tr>
+      </table>
+    </div>
+
+</div>
+
